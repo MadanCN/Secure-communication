@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+      
+.selection {
+        text-align: center;
+}
+      
+.selection h3 {
+        margin-bottom: 20px;
+}
+
+.encryption-1{
+    text-align: center;
+}
+
+.encryption-2{
+    text-align: center;
+    display: none;
+}
+
+#file-options, #encryption-form{
+    text-align: center;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin: 10px 0;
+  }
+
+.decryption{
+    align-items: center;
+    text-align: center;
+}
+
+.decryption h3{
+    margin-bottom: 50px;
+}
+
+.decryption span{
+    margin-bottom: 30px;
+}
+
+.result{
+    text-align: center;
+}

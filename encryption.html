@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encryption Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <!-- File type options container -->
+  <div id="file-options" class="encryption-1">
+    <h2>Encryption</h2>
+    <br>
+    <p>Choose a file type to hide the message:</p>
+    <button onclick="chooseFile('text')">Text</button>
+    <button onclick="chooseFile('audio')">Audio</button>
+    <button onclick="chooseFile('video')">Video</button>
+    <button onclick="chooseFile('image')">Image</button>
+  </div>
+
+<!-- Encryption form container -->
+  <div id="encryption-form" class="encryption-2">
+    <h2>Encryption</h2>
+    <br>
+    <textarea id="textInput" placeholder="Enter text to encrypt"></textarea>
+    <a href="result-encrypt.html" onclick="showResult('encrypt')"><button>Encrypt Text</button></a>
+  </div>  
+
+  <script src="script.js"></script>
+</body>
+</html>
