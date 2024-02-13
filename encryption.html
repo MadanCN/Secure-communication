@@ -4,29 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Encryption Page</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/rest.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
+
+   <!-- Header -->
+
+   <header>
+    <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#service">Services</a></li>
+        <li><a href="index.html#Working">Working</a></li>
+        <li><a href="index.html#learn">Learn More</a></li>
+    </ul>
+
+    <div class="top-btn">
+        <a href="#contact" class="h-btn">About Us</a>
+    </div>
+</header>
+
   <!-- File type options container -->
   <div id="file-options" class="encryption-1">
-    <h2>Encryption</h2>
+    <div class="center-text" data-aos="fade-down">
+    <h1>Encryption</h1>
+    </div>
     <br>
     <p>Choose a file type to hide the message:</p>
-    <button onclick="chooseFile('text')">Text</button>
-    <button onclick="chooseFile('audio')">Audio</button>
-    <button onclick="chooseFile('video')">Video</button>
-    <button onclick="chooseFile('image')">Image</button>
+    <div class="btn-list">
+    <button class="btn" onclick="chooseFile('text')">Text</button>
+    <button class="btn" onclick="chooseFile('audio')">Audio</button>
+    <button class="btn" onclick="chooseFile('video')">Video</button>
+    <button class="btn" onclick="chooseFile('image')">Image</button>
+  </div>
   </div>
 
 <!-- Encryption form container -->
   <div id="encryption-form" class="encryption-2">
-    <h2>Encryption</h2>
+    <div class="center-text" data-aos="fade-down">
+      <h1>Encryption</h1>
+      </div>
     <br>
-    <textarea id="textInput" placeholder="Enter text to encrypt"></textarea>
-    <a href="result-encrypt.html" onclick="showResult('encrypt')"><button>Encrypt Text</button></a>
+    <textarea class="text-area" id="textInput" placeholder="Enter text to encrypt"></textarea>
+    <div>
+    <a href="result-encrypt.html" onclick="showResult('encrypt')"><button class="btn">Encrypt Text</button></a>
+  </div>
   </div>  
 
-  <script src="script.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 </html>
