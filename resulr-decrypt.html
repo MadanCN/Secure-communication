@@ -4,15 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Result Page</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/rest.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
+  <!-- Header -->
+
+  <header>
+    <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#service">Services</a></li>
+        <li><a href="index.html#Working">Working</a></li>
+        <li><a href="index.html#learn">Learn More</a></li>
+    </ul>
+
+    <div class="top-btn">
+        <a href="#contact" class="h-btn">About Us</a>
+    </div>
+</header>
+
+
   <!-- Result container -->
 
-  <div id="result-decrypt" class="result">
-    <h3>Result:</h3>
-    <p>This result of Decryption goes here</p>
+  <div id="result-encrypt" class="result">
+
+    <div class="center-text" data-aos="fade-down">
+    <h1>Result</h1>
+    </div>
+    <i><h2>This result of Decryption goes here</h2></i>
+    <br>
+    <i><h2>Time Taken: __ s</h2></i>
   </div>
 
   <script src="script.js"></script>
