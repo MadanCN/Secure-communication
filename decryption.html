@@ -4,17 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Decryption Page</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/rest.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
+  <!-- Header -->
+
+  <header>
+    <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#service">Services</a></li>
+        <li><a href="index.html#Working">Working</a></li>
+        <li><a href="index.html#learn">Learn More</a></li>
+    </ul>
+
+    <div class="top-btn">
+        <a href="#contact" class="h-btn">About Us</a>
+    </div>
+</header>
+
+
   <!-- Decryption form container -->
   <div id="decryption-form" class="decryption">
-    <h3>Decryption</h3>
-    <span> </span><label for="fileInput" class="file-label">Select a file to decrypt</label></span>
-    <input type="file" id="fileInput" accept=".txt, .audio, .video, .image">
+    <div class="center-text" data-aos="fade-down">
+      <h1>Decryption</h1>
+      </div>
+      <div>
+    <label for="fileInput" class="file-label"> <h4>Select a file to decrypt </h4></label></span>
+  </div>
+  <div class="chooseFile">
+    <input class="h-btn" type="file" id="fileInput" accept=".txt, .audio, .video, .image" >
     <br>
-    <a href="resulr-decrypt.html" onclick="showResult('decrypt')"><button>Decrypt Text</button> </a>
+  </div>
+  <div class="decrypt-btn">
+    <a href="resulr-decrypt.html" onclick="showResult('decrypt')"><button class="btn">Decrypt Text</button> </a>
+  </div>
   </div>
 
   <script src="script.js"></script>
