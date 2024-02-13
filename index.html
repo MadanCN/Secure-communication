@@ -4,18 +4,127 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Secure Communication</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style.css">
+   <!-- remix icons link -->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body> 
 
-  <!-- Choosing Encryption or Decryption -->
-  <div class="selection">
-    <h3>Select an Option</h3>
-    <a href="encryption.html"><button>Encrypt</button> </a>
-    <a href="decryption.html"><button>Decrypt</button></a>
+  <!-- Header -->
+
+    <header>
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#Working">Working</a></li>
+            <li><a href="#learn">Learn More</a></li>
+        </ul>
+
+        <div class="top-btn">
+            <a href="#contact" class="h-btn">About Us</a>
+        </div>
+    </header>
+
+
+  <!-- Section -->
+
+  <section class="hero" id="home" data-aos="fade-in">
+    <div class="main-content" >
+        <h4>Hi, There!</h4>
+        <h1><span>Cryptic</span> Explorer</h1>
+        <p>Welcome to the world of Spies 🕵️</p>
+        <div class="social">
+            <a href="#"><i class="ri-github-fill"></i></a>
+            <a href="#"><i class="ri-survey-fill"></i></a>
+            <a href="#"><i class="ri-mail-fill"></i></i></a>
+        </div>
+
+        <div class="main-btn">
+            <a href="#service" class="btn">Dive In</a>
+        </div>
+    </div>
+</section>
+
+  <!-- Services -->
+
+  <section class="services" id="service">
+    <div class="center-text" data-aos="fade-down">
+        <h2>Our <span>Services</span></h2>
+    </div>
+    <!-- Project lists -->
+    <div class="skills-content" data-aos="zoom-in-up">
+        <!-- skills list -->
+        <div class="box">
+            <img src="assets/images/serv-01.jpg" alt="">
+            <h3>Encryption</h3>
+            <p>Hide your data in various file types</p>
+            <a href="encryption.html">
+                Proceed to Encryption
+                <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
+
+        <div class="box">
+            <img src="assets/images/serv-02.jpg" alt="">
+            <h3>Decryption</h3>
+            <p>Expose the data hidden in different files</p>
+            <a href="decryption.html">
+              Proceed to Decryption
+                <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section class="learn" id="learn">
+  <div class="center-text" data-aos="fade-down">
+      <h2>Learn <span>More</span></h2>
   </div>
-  
+  <div>
+    <h2>What is Steganography?</h2>
+    <p>Steganography is the art of hiding secret data in plain sight. It sounds kind of counter-intuitive, but you’d be surprised how effective it is.
+      <br>Hiding things such as source code, passwords, IP addresses, and other confidential information in pictures, music, or other random files tends to be the last place anyone would think of finding them.
+      <br>
+      You should note that steganography and cryptography are not mutually exclusive from each other. One may contain elements of the other or both. For example, you could perform steganography with an encryption algorithm or password, as you’ll find out soon.
+    </p>
+    <h2>Types of Steganography</h2>
+    <p>There are various types of steganography, and we’ll look at four of them here.</p>
+    <ul>
+      <li><h3>1. Text Steganography</h3></li>
+      <p>This form involves hiding a message within a text. A common way to do this is substitution. It involves replacing certain characters with others and then substituting them back to retrieve the original data.
+        <br>
+
+        For example, take the following text.
+        <br> <b><i>
+        Thi follow eng tixt contaens a sicrit missagi </i> </b><br>
+        Doesn’t really make sense right? But what if we replace the i’s with e’s and the e’s with i’s?
+        <br><b>
+        <i>
+        The follow ing text contains a secret message </i> </b>
+        <br>
+        I think that’s a little easier on the eyes. This is a pretty easy example, but there are much more complicated ones and even some you could come up with on your own.</p>
+
+        <li><h3>2. Image Steganography </h3></li>
+        <p>Frankly, this is my favourite. It involves hiding data behind digital images. There are various techniques for image steganography which include the Least Significant Bit technique, Masking and Filtering, and Coding and Cosine Transformation.
+          <br>
+          Take a look at the two images below and spot the difference:
+          <br>
+          <img src="assets/images/l-01.png" alt="#">
+          Basically, no human on earth can tell the visual difference. But if you take a closer look at the file details…
+          <img src="assets/images/l-03.png" alt="#">
+          The only difference is the size of the images. That’s because the one on the right is hiding 260 words of text in it. How cool is that?
+        </p>
+        <li><h3>3. Video Steganography</h3></li>
+        <p>In Video steganography, you can literally hide entire videos inside another video. Videos are basically a sequence of images with audio playing as the sequence progresses. This type of steganography allows each video frame to encode an image of the one you want to hide.</p>
+        <li><h3>4. Audio Steganography</h3></li>
+        <p>This type of steganography enables hidden messages to be encoded inside an audio file. A common technique used in this is called Backmasking. Backmasking is hiding a message in the audio file and it can only be heard when played backwards.</p>
+    </ul>
+  </div>
+</section>
+
+
   <!-- Link for js -->
-  <script src="script.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 </html>
